@@ -1,35 +1,51 @@
-*{ 
-box-sizing:border-box; 	
-margin: 0; 	
-padding: 0; 
-} 
-body
-{ 
-font-family:Comic Sans MS,Arial,sans-serif; 
-} 
-h1{ 	text-align: center; 	margin:10px; 	font-size: 1.5em; 
-} 
-.row{ 	margin-left: auto; 	margin-right: auto; 	width:100%; 
-} 
-.box{ 	border: 1px solid black; 	position:relative; 	margin:1%; 	padding: 10px; 	background-color: #d6c2d5; 
-} 
-.sbox{ 	border-left:1px solid black ; 	border-bottom: 1px solid black; 	padding:0 20px 0 20px; 	position:absolute; 	top:0; 	right:0; 	font-size:1.1em; 	 
-} 
-p{margin: 10px;}
-#Chic{background-color:#0000FF;}
-#Beef{background-color: #FFFF00;}
-#Sushi{background-color: #FF0000;}
-@media (min-width: 992px)
-{ 	
-.col-lg-4{ 		width:31.33%; 		float:left; 	
-} 
-} 
-@media (max-width: 991px) and (min-width: 768px)
-{ 	
-.col-md-6{width:48%; float:left;} 	
-.col-md-12{width:98%; float:left;} 	 
-} 
-@media (max-width: 767px)
-{ 	
-.col-sm-12{width:98%;} 
-}
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+     
+    function dis(val) 
+    { 
+      document.getElementById("result").value+=val 
+    } 
+    
+     
+    function solve() 
+    { 
+      let x = document.getElementById("result").value 
+      let y = eval(x) 
+      document.getElementById("result").value = y 
+    } 
+    
+     
+    function clr() 
+    { 
+      document.getElementById("result").value = "" 
+    } 
+</script>
+<style>
+	.title {
+		margin-bottom: 12px;
+		background-color: green;
+		color: white;
+		width: 400px;
+		border: solid black 2px;
+		font-style: italic;
+	}
+	input[type="button"]
+	{
+		background-color: black;
+		color: white;
+		width: 100px;
+		border: solid red;
+	}
+	input[type="text"]
+	{
+		color: black;
+		background-color: white;
+		font-style: italic;
+		width: 300px;
+	}
+</style>
+</head>
+</html>
