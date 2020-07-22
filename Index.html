@@ -1,24 +1,49 @@
 <!doctype html>
 <html>
-<head>	
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width initial sacle=i">	
-<title>Module 2 solutions</title><link rel="stylesheet" type="text/css" href="css/style.css">
+<head>
+<title>calculator</title>
 </head>
 <body>
-<h1>Our Menu</h1>	
-<section class="row"><section class="box col-lg-4 col-md-6 col-sm-12">			
-<h2 id="Chic" class="sbox">Chicken</h2>			
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</section>		
-<section class="box col-lg-4 col-md-6 col-sm-12">
-<h2 id="Beef" class="sbox">Beef</h2>	
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</section><section class="box col-lg-4 col-md-6 col-md-12 col-sm-12">			
-<h2 id="Sushi" class="sbox">Sushi</h2>	
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</section>	
-</section>
-</body>
+<h1>calculator</h1>
+<button onclick="addition()">addition</button>
+<button onclick="substraction()">substraction</button>
+<button onclick="multiplication()">multiplication</button>
+<button onclick="division()">Division</button>
+<script>
+function addition(){
+  var a=0,b=0,r=0;
+  a=parseInt(prompt("input a   number"));
+b=parseInt(prompt("input another number"));
+alert("the numbers  "+a+"  and "+b);
+ r=a+b;
+ alert("The sum of two numbers "+a+" and "+b+" is "+r);
+} 
+function substraction(){
+var a=0,b=0,r=0;
+a=parseInt(prompt("input a number"));
+b=parseInt(prompt("input another number"));
+alert("the numbers  "+a+"  and "+b);
+ r=a-b;
+ alert("The difference of two numbers "+a+" and "+b+" is "+r);
+}  
+ function multiplication(){
+var a=0,b=0,r=0;
+a=parseInt(prompt("input a number"));
+b=parseInt(prompt("input another number"));
+alert("the numbers  "+a+"  and "+b);
+ r=a*b;
+ alert("The product of two numbers "+a+" and "+b+" is "+r);
+}
+ function division(){
+var a=0,b=0,r=0;
+a=parseInt(prompt("input a number"));
+b=parseInt(prompt("input another number"));
+alert("the numbers  "+a+"  and "+b);
+ r=a/b;
+ alert("The result of division of two numbers "+a+" and "+b+" is "+r);
+} 
+</script>
+</body
 </html>
+
 	 
